@@ -53,7 +53,7 @@ class temperature : public Parameter{
     
     public:
         temperature(Language Lang, float min_value, float max_value, string name ,UnitType unit);
-        void Conversion(float unit);
+        void Conversion(UnitType unit);
 };
 
 
