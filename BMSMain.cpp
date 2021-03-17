@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    class BMS * BMS_obj = new BMS(DEUTSCH,FAHRENHEIT);
+    class BMS * BMS_obj = new BMS(DEUTSCH,CELCIUS);
     
     assert(BMS_obj->isBatteryOK(44,22,0.7) == true);
     assert(BMS_obj->isBatteryOK(85,20,0.8) == false);
