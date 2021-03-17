@@ -91,6 +91,8 @@ BMS::BMS(Language Lang, UnitType temperature_unit)
         stateOfChargeObj = new StateOfCharge(Lang, MIN_STATE_OF_CHARGE, MAX_STATE_OF_CHARGE,"StateOfCharge");
         chargeObjRate = new ChargeRate(Lang, MIN_CHARGE_RATE, MAX_CHARGE_RATE,"ChargeRate");
     }
+    else if(Lang == DEUTSCH)
+    {
         temperatureObj = new temperature(Lang, MIN_TEMP_THRESHOLD, MAX_TEMP_THRESHOLD,"Temperatur",temperature_unit);
         stateOfChargeObj = new StateOfCharge(Lang, MIN_STATE_OF_CHARGE, MAX_STATE_OF_CHARGE,"Ladezustand");
         chargeObjRate = new ChargeRate(Lang, MIN_CHARGE_RATE, MAX_CHARGE_RATE,"Ladestrom");
