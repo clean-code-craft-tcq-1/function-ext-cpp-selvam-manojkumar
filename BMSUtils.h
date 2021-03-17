@@ -29,10 +29,6 @@ typedef enum {
     FAHRENHEIT
 } UnitType;
 
-string pramameter_name_english[] = {"Temperature" , "SOC" , "Charge Rate" };
-string pramameter_name_deutch[] =  {"Temperatur" , "Ladezustand" , "Laderate" };
-
-
 /*
 * Parent class for parameters which can inherit the common metheods
 */
