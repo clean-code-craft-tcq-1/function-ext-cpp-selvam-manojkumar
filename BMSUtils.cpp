@@ -59,7 +59,7 @@ bool Parameter::check_threshold(float value){
     return (check_min(value) &&  check_max(value));
 };
 
-void temperature::Conversion (float unit){
+void temperature::Conversion (UnitType unit){
 
     if (unit == FAHRENHEIT){
          min_threshold = (min_threshold - 32)*5/9;
