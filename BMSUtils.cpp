@@ -101,7 +101,8 @@ BMS::BMS(Language Lang, UnitType temperature_unit)
 
 bool BMS::isBatteryOK(float temperature, float SOC, float charge_rate)
 {
-    return( temperatureObj->check_threshold(temperature) &&
-            stateOfChargeObj->check_threshold(SOC) &&
-            chargeObjRate->check_threshold(charge_rate));
+        bool tempertaure_result = temperatureObj->check_threshold(temperature); 
+        bool stateOfCharge_result =  stateOfChargeObj->check_threshold(SOC); 
+        bool chargeRate_result   =  chargeObjRate->check_threshold(charge_rate);
+        return (tempertaure_result && stateOfCharge_result && chargeRate_result);
 }
